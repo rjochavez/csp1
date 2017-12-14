@@ -1,0 +1,516 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	/*border: 1px solid black;*/
+}
+
+.clear:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+body{
+	background: url('../img/bg-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.wrapper{
+	min-height: 900px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	text-shadow: 2px 2px 10px #000;
+	filter: drop-shadow(2px 2px 10px #000;);
+	position: fixed;
+	width: 100%;
+}
+
+.subWrapper{
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Raleway', sans-serif;
+}
+
+.grP{
+	display: inline-block;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+.grP > h3{
+	font-size: 2em;
+}
+
+.grP.book,
+.grP.home{
+	transition: all ease-in-out 300ms;
+	position: relative;
+	top: 100px;
+	padding: 40px;
+}
+
+.book,
+.home{
+	width: 25%;
+	top: 50%;
+}
+
+.title{
+	width: 50%;
+	font-size: 2em;
+}
+
+.title > .btn-title > h1{
+	font-family: 'Lobster', cursive;
+	font-size: 3.2em;
+	padding-bottom: 20px;
+}
+
+.title > .btn-title > p{
+	font-size: 1em;
+	padding-bottom: 20px;
+}
+
+.title > .btn-title > h1 > span{
+	color: #52AC87;
+}
+
+.btn > a > button{
+	width: 80%;
+	padding: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 0;
+	border-radius: 10px;
+	font-weight: bolder;
+	font-family: 'Lobster', cursive;
+	text-transform: capitalize;
+	font-size: 0.6em;
+}
+
+.btn-home > a > button{
+	background: #52AC87;
+	color: #fff;
+}
+
+.btn-book > a > button{
+	background: #fff;
+	color: #52AC87;;
+}
+
+.btn-home > a > button:hover,
+.btn-book > a > button:hover{
+	background: #645555;
+	color: #fff;
+}
+
+
+
+.btn-book,
+.btn-home{
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.hide{
+	opacity: 0;
+}
+
+
+.topMenu{
+	text-align: center;
+	height: 200px;
+	width: 100%;
+	bottom: 8%;
+	position: fixed;
+	background: linear-gradient(90deg,
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 0.2) 25%,
+	rgba(255, 255, 255, 0.2) 75%,
+	rgba(255, 255, 255, 0) 100%);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+	inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.menu{
+	width: 18%;
+	display: inline-block;
+	height: 85%;
+	margin-left: 20px;
+	cursor: pointer;
+	color: #fff;
+	text-shadow: 2px 2px 10px #000;
+	border-radius: 10px;
+	border: 10px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 3px 3px 10px #000;	
+}
+
+.img-one > h2,
+.img-two > h2,
+.img-three > h2,
+.img-four > h2{
+	background: rgba(0,0,0,0.5);
+	transition: all ease-in-out 300ms;
+}
+
+.img-one > p,
+.img-two > p,
+.img-three > p,
+.img-four > p{
+	font-size: 0.8em;
+	background: rgba(0,0,0,0.5);
+	transition: all ease-in-out 300ms;
+}
+
+.topMenu > .topMenuTitle > h2{
+	margin-bottom: 20px;
+}
+
+.topMenu > .topMenuTitle > h2,
+.topMenu .menu h2,
+.topMenu .menu p{
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	text-shadow: 2px 2px 10px #000;
+}
+
+.topMenuTitle > h2{
+	letter-spacing: 3px;
+	padding-top: 10px;
+}
+
+.img-one{
+	background: url('../img/baricole.jpg');
+	background-size: cover;
+}
+
+.img-two{
+	background: url('../img/eggparm.jpg');
+	background-size: cover;
+}
+
+.img-three{
+	background: url('../img/lasagna.jpg');
+	background-size: cover;
+}
+
+.img-four{
+	background: url('../img/spagandmeat.jpeg');
+	background-size: cover;
+}
+
+.footer{
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.7em;
+	margin-top: 5px;
+}
+
+.socMedIcons > img{
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.socMedIcons > img:hover{
+	opacity: 1;
+}
+
+.chefIcon{
+	height: 100px;
+	filter: invert(100%);
+}
+
+.fb{
+	animation-delay: 1s;
+	animation-iteration-count: 60;
+}
+.yt{
+	animation-delay: 2s;
+	animation-iteration-count: 60;
+}
+.ig{
+	animation-delay: 3s;
+	animation-iteration-count: 60;
+}
+
+/*----------------------------------------------ADDED*/
+.clear:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.reserveWrap{
+	left: 100%;
+	height: 900px;
+	background: rgba(0,0,0,0.5);
+	position: fixed; 
+	z-index: 99999999999;
+	width: 100%;
+	transition: all ease-in-out 300ms;
+}
+
+.reserveCont{
+	height: 80%;
+	width: 70%;
+	margin: auto;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resErve{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	background: url('../img/foodchoices.jpeg');
+	padding: 30px;
+}
+
+.resErve > h2{
+	font-family: 'Lobster', cursive;
+	font-size: 4em;
+	margin-bottom: 50px;
+}
+
+.resErve span{
+	text-shadow: 2px 2px 10px #000;
+	color: #52AC87;
+}
+
+.resErve > h3,
+.resErve > h4,
+.resErve > p{
+	font-family: 'Raleway',sans-serif;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+.resErve > label{
+	font-family: 'Lobster', cursive;
+	font-weight: bolder;
+	font-size: 1.1em;
+	letter-spacing: 3px;
+}
+
+.resErve input{
+	width:100%;
+	margin-bottom: 20px;
+	height: 30px;
+	box-shadow: none;
+	filter: none;
+
+}
+
+.resErve input,
+.resErve textarea,
+.resErve button{
+	outline: none;
+	border-radius: 0px;
+	box-shadow: none;
+	filter: none;
+	width: 100%;
+}
+
+.resErve textarea{
+	height: 20%;
+}
+
+.resErve.grP2 > button{
+	margin-top: 10px;
+	padding: 10px;
+	font-family: 'Lobster', cursive;
+	font-size: 1.5em;
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+	
+
+}
+
+.resErve button:hover{
+	background: #52AC87;
+}
+
+.fa-times-circle{
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	position: absolute;
+	color: #000	;
+}
+
+.fa-times-circle:hover{
+	color: #fff;
+}
+
+
+.appear1{
+	left: 0%;
+}
+
+/*-------------------------------------DISCLAIMER*/
+
+.disClaimer{
+	position: fixed;
+	width: 100%;
+	top: 70px;
+	left: 10px;
+	z-index: 99999999;
+}
+
+
+.disIcon{
+	border-radius: 50%;
+	width: 10%;
+	text-align: center;
+	font-size: 2em;
+	cursor: pointer;
+	opacity: 0.1;
+}
+
+.fa-exclamation:before{
+	padding-left: 15px;
+	padding-top: 5px;
+	border-radius: 50%;
+	color: #fff;
+	padding-right: 15px;
+	background: rgba(0,0,0,0.5);
+}
+
+.disText{
+	transition: all ease-in-out 300ms;
+	background: rgba(0,0,0,0.5);
+	width: 80%;
+	padding: 5px;
+	font-weight: bolder;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	font-family: 'raleway',sans-serif;
+}
+
+.disC{
+	display: inline-block;
+	float: left;
+}
+
+.hide3{
+	opacity: 0;
+}
+
+.disIcon:hover{
+	opacity: 1;
+}
+/*-------------------------------------DISCLAIMER END*/
+
+/*----------------------------------------------ADDED*/
+
+@media only screen and (max-width: 400px){
+	.wrapper{
+		font-size: 0.8em;
+	}
+
+	.topMenu{
+		display: none;
+	}
+
+	.subWrapper{
+		top: 30%;
+	}
+	.title{
+		width: 100%;
+		font-size: 1.5em;
+	}
+	
+	.book,
+	.home{
+		display: none;
+	}
+
+	.reserveCont{
+		height: 100%;
+		width: 100%;
+		font-size: 0.5em;
+	}
+
+	.reserveWrap{
+		font-size: 0.7em;
+	}
+
+	.grP2 > textarea{
+		width: 100px;
+	}
+
+	.resErve.grP2 > button{
+		padding: 0;
+	}
+
+	.resErve input{
+		width:100%;
+		margin-bottom: 5px;
+		height: 20px;
+	}
+
+	.resErve textarea{
+		width: 100px;
+	}
+
+	.resErve button{
+		width: 100%;
+	}
+
+	.fa.fa-times-circle{
+		font-size: 2.5em;
+	}
+
+	.resErve.grP2{
+		font-size: 1em;
+	}
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	.topMenu{
+		font-size: 0.5em;
+	}
+	.book,.home{
+		font-size: 0.5em;
+	}
+
+	.menu{
+		width: 19%;
+	}
+	.reserveCont .resErve.grP1{
+		font-size: 0.7em;
+	}
+
+	.subWrapper{
+		top: 45%;
+	}  
+}
+
+@media only screen and (min-width: 1280px){
+	.subWrapper{
+		top: 35%;
+	}
+	.title > .btn-title > h1{
+		padding-bottom: 0px;
+	}
+
+	.reserveCont{
+	    top: 45%;
+	}
+}

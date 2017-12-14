@@ -1,0 +1,739 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#aboutPage{
+	/*min-height: 2000px;*/
+	background: url('../img/foodchoices.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: auto;
+}
+
+body{
+	background: #000;
+}
+
+/*---------------------------------------NAVBAR SECTION AND FONTS*/
+.navbar{
+	transition: all ease-in-out 300ms;
+	color: #000;
+	background: #000;
+	padding-bottom: 20px;
+	z-index: 99999;
+	width: 100%;
+  	top: 0;
+  	position: fixed;
+}
+
+.brandLogo{
+	display: inline-block;
+	width: 49%;
+	margin-top: 20px;
+	color: #fff;
+}
+
+.logoContainer{
+	width: 25%;
+	text-align: center;
+}
+
+.navList{
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	padding-right: 25px;
+
+}
+.navOpt{
+	margin-left: 25px;
+	outline: none;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	transition: all ease-in-out 300ms;
+}
+
+nav ul li a:hover{
+	color: #52AC87;
+	filter: drop-shadow(1px 0px 3px #000);
+}
+
+strong{
+	font-family: 'Lobster', cursive;
+	font-size: 1.3em;
+}
+
+h1,h2{
+	font-family: 'Lobster', cursive;
+	font-weight: bolder;
+}
+
+h3,h4,.navOpt{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+}
+
+nav ul li a{
+	text-shadow: 2px 2px 4px #000;
+	cursor: pointer;
+}
+
+p, ul li{
+	font-family: 'Raleway', sans-serif;
+}
+
+small{
+	font-weight: bolder;
+	text-shadow: 2px 2px 4px #000;
+}
+
+span{
+	color: #52AC87;
+}
+
+
+/*---------------------------------------NAVBAR SECTION AND FONTS END*/
+
+.clear:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+
+/*----------------------------------------ABOUT US CONTENT*/
+
+.aboutUsContent{
+	background: #fff;
+	width: 70%;
+	margin: auto;
+	height: 1200px;
+	padding-top: 7%;
+	filter: drop-shadow(2px 2px 20px #000);
+}
+
+.aboutUsContent > h2{
+	padding: 10px;
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 8px;
+}
+
+.aboutDetails{
+	height: 46%;
+}
+
+.aboutTitle{
+	margin: 20px;
+	font-size: 2em;
+}
+
+.aboutImageCon{
+	background: url("../img/cooking.jpg");
+	background-size: cover;
+	box-shadow: 2px 2px 10px #000;
+}
+
+.aboutImageCon,
+.aboutImageInfo{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	height: 70%;
+	padding: 20px;
+}
+
+.aboutImageInfo > h3>  span{
+	font-size: 1.3em;
+}
+
+.aboutLastContent{
+	padding: 20px;
+}
+
+.aboutLastContent > ul{
+	padding-left: 20px;
+}
+
+
+
+/*----------------------------------------ABOUT US CONTENT END*/
+
+/*--------------------------------------------contact details*/
+
+.contWrap{
+	left: -100%;
+	height: 900px;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 99999999;
+	position: fixed;
+	font-family: 'Raleway', sans-serif;
+	transition: all ease-in-out 300ms;
+}
+
+.contCon{
+	height: 50%;
+	width: 50%;
+	margin: auto;
+	position: relative;
+	top: 15%;
+	background: url('../img/foodchoices.jpeg');
+	box-shadow: 2px 2px 4px #000;
+}
+
+.conTitle > h3{
+	text-align: center;
+	height: 20%;
+	line-height: 90px;
+	background: #000;
+	color: #fff;
+	font-size: 2em;
+	font-family: 'Lobster', cursive;
+}
+
+.fa-times{
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	position: absolute;
+	color: #fff	;
+}
+
+.fa-eject{
+	animation-iteration-count: 2;
+}
+
+
+
+.contactGrp1,
+.contactGrp2{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	height: 80%;
+	text-align: center;	
+	padding-top: 20px;
+}
+
+
+textarea,
+input{
+	resize: none;
+	outline: none;
+	border-radius: 10px;
+	filter: drop-shadow(1px 2px 10px #000);
+}
+
+.contactGrp1{
+	font-weight: bolder;
+}
+
+.contactGrp1 > label{
+	font-weight: bolder;
+	font-size: 1.2em;
+	font-family: 'Lobster',cursive;
+	color: #52AC87;
+	text-shadow: 2px 2px 4px #000;
+}
+
+
+.contactGrp2 > img{
+	height: 60px;
+	width: auto;
+	margin-right: 15px;
+	margin-top: 30px;
+	cursor: pointer;
+	margin-bottom: 40px;
+	filter: drop-shadow(5px 4px 20px #000);
+}
+
+.contactGrp2 > img:hover{
+	opacity: 0.5;
+	transition: all ease-in-out 300ms;
+}
+
+.contactGrp2 > h3{
+	font-family: 'Lobster', cursive;
+	color: #52AC87;
+	text-shadow: 2px 2px 4px #000;
+}
+
+.btn2{
+	padding: 5px 10px 5px 10px;
+	font-family: 'Lobster', cursive;
+	font-size: 1em;
+	transition: all ease-in-out 300ms;
+	cursor: pointer;
+	box-shadow: 2px 2px 10px #000;
+	filter: drop-shadow(1px 2px 20px #000);
+}
+
+.btn2:hover{
+	background: #52AC87;
+}
+
+.appear{
+	left: 0%;
+}
+
+.hide{
+	visibility: hidden;
+}
+
+/*--------------------------------------------contact details end*/
+
+.clear:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.reserveWrap{
+	left: 100%;
+	height: 900px;
+	background: rgba(0,0,0,0.5);
+	position: fixed; 
+	z-index: 99999999;
+	width: 100%;
+	transition: all ease-in-out 300ms;
+}
+
+.reserveCont{
+	height: 80%;
+	width: 70%;
+	margin: auto;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resErve{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	background: url('../img/foodchoices.jpeg');
+	padding: 30px;
+}
+
+.resErve > h2{
+	font-family: 'Lobster', cursive;
+	font-size: 4em;
+	margin-bottom: 50px;
+}
+
+.resErve span{
+	text-shadow: 2px 2px 10px #000;
+}
+
+.resErve > h3,
+.resErve > h4,
+.resErve > p{
+	font-family: 'Raleway',sans-serif;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+.resErve > label{
+	font-family: 'Lobster', cursive;
+	font-weight: bolder;
+	font-size: 1.1em;
+	letter-spacing: 3px;
+}
+
+.resErve input{
+	width:100%;
+	margin-bottom: 20px;
+	height: 30px;
+	box-shadow: none;
+	filter: none;
+
+}
+
+.resErve input,
+.resErve textarea,
+.resErve button{
+	outline: none;
+	border-radius: 0px;
+	box-shadow: none;
+	filter: none;
+	width: 100%;
+}
+
+.resErve input:hover,
+.resErve textarea:hover{
+	filter: drop-shadow(2px 2px 20px #000);
+	cursor: pointer;
+}
+
+.resErve.grP2 > button{
+	margin-top: 10px;
+	padding: 10px;
+	font-family: 'Lobster', cursive;
+	font-size: 1.5em;
+	cursor: pointer;
+	transition: all ease-in-out 300ms;
+	
+
+}
+
+.resErve button:hover{
+	background: #52AC87;
+	filter: drop-shadow(2px 2px 20px #000);
+}
+
+.fa-times-circle{
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	position: absolute;
+	color: #000	;
+}
+
+.fa-times-circle:before{
+	font-size: 1em;
+}
+
+.fa-times-circle:hover{
+	color: #fff;
+}
+
+
+.appear1{
+	left: 0%;
+}
+
+
+.resErve textarea{
+	height: 20%;
+}
+
+textarea,
+input{
+	resize: none;
+	outline: none;
+	border-radius: 0px;
+	filter: drop-shadow(1px 2px 10px #000);
+}
+
+input:hover,
+textarea:hover{
+	filter: drop-shadow(2px 2px 20px #000);
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------FOOTER*/
+
+.footer{
+	height: 40px;
+	background: black;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 0.7em;
+}
+
+/*--------------------------------------------FOOTER END*/
+
+
+/*---------------------------DISCLAIMER*/
+
+.disClaimer{
+	position: fixed;
+	width: 100%;
+	bottom: 60px;
+	z-index: 99999999;
+}
+
+
+.disIcon{
+	border-radius: 50%;
+	width: 10%;
+	text-align: center;
+	font-size: 2em;
+	cursor: pointer;
+	opacity: 0.1;
+}
+
+.fa-exclamation:before{
+	padding-left: 15px;
+	padding-top: 5px;
+	border-radius: 50%;
+	color: #fff;
+	padding-right: 15px;
+	background: rgba(0,0,0,0.5);
+}
+
+.disText{
+	transition: all ease-in-out 300ms;
+	background: rgba(0,0,0,0.5);
+	width: 80%;
+	padding: 5px;
+	font-weight: bolder;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	font-family: 'raleway',sans-serif;
+}
+
+.disC{
+	display: inline-block;
+	float: left;
+}
+
+.hide3{
+	opacity: 0;
+}
+
+.disIcon:hover{
+	opacity: 1;
+}
+/*---------------------------DISCLAIMER END*/
+
+
+/*-----------------------------------------MEDIA QUERIES*/
+
+@media only screen and (max-width: 400px){
+	.brandLogo{
+		height: auto;
+		width: 100%;
+		margin-top: 0;
+		text-align: center;
+		padding: 10px;
+		font-size: 2em;
+	}
+	
+	.logoContainer{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.navList{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		padding-right: 0;
+	}
+
+	.navOpt{
+		margin-left: 5px;
+		outline: none;
+		font-size: 1.4em;
+	}
+
+	.aboutUsContent{
+		padding-top: 35%;
+	}
+
+	#aboutPage{
+		font-size: 0.5em;
+	}
+	.aboutImageCon{
+		height: 20%;
+	}
+
+	.contWrap{
+		font-size: 1em;	
+	}
+
+	input,
+	textarea{
+		width: 50%;
+	}
+
+	.contCon{
+		height: 100%;
+		top: 0%;
+		width: 100%;
+	}
+
+	.aboutUsContent{
+		width: 100%;
+	}
+
+	.contWrap{
+		font-size: 0.8em;	
+	}
+
+	input{
+		width: 80%;
+		margin-bottom: 0px;
+	}
+
+	textarea{
+		width: 80%;
+	}
+
+	.contactGrp2 > img{
+		height: 40px;
+		margin-right: 0px;
+	}
+
+	.aboutImageCon,
+	.aboutImageInfo{
+		width: 100%;
+		display: inline-block;
+		float: left;
+		height: 70%;
+		padding: 20px;
+	}
+
+	.aboutImageInfo{
+		height: 40%;
+	}
+
+	.reserveCont{
+		height: 100%;
+		width: 100%;
+		font-size: 0.5em;
+	}
+
+	.resErve input{
+		width:100%;
+		margin-bottom: 5px;
+		height: 20px;
+	}
+
+	.resErve textarea{
+		width: 120px;
+	}
+
+	.resErve button{
+		width: 100%;
+	}
+
+	.fa.fa-times-circle{
+		font-size: 2.5em;
+	}
+
+	.reserveWrap{
+		font-size: 0.7em;
+	}
+
+	.grP2 > textarea{
+		width: 100px;
+	}
+
+	.resErve.grP2{
+		font-size: 1em;
+	}
+
+
+	.resErve.grP2 > button{
+		padding: 0;
+	}
+
+	.disClaimer{
+		width: 100%;
+		bottom: 190px;
+		left: 5px;
+	}
+
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+	.navOpt{
+		margin-left: 5px;
+		font-size: 0.8em;
+	}
+
+	.navbar{
+		padding-bottom: 0px;
+		position: fixed;
+		font-size: 1.4em;
+	}
+
+	.navList{
+		padding-right: 0px;
+	}
+
+	.logoContainer{
+		width: 40%;
+		text-align: center;	
+	}
+
+	#aboutPage{
+		font-size: 0.6em;
+	}
+
+	.aboutUsContent{
+		padding-top: 7%;
+	}
+
+	.aboutImageCon{
+		height: 25%;
+	}
+	
+
+	.aboutImageCon,
+	.aboutImageInfo{
+		width: 100%;
+		display: inline-block;
+		float: left;
+		height: 70%;
+		padding: 20px;
+	}
+
+	.aboutImageInfo{
+		height: 35%;
+	}
+
+	.contactGrp1 input,
+	.contactGrp1 textarea{
+		width: 200px;
+	}
+
+	.contactGrp1 textarea{
+		width: 230px;
+	}
+
+	.contactGrp2 > img{
+		height: 60px;
+		margin-right: 15px;
+	}
+
+	.contCon{
+		width: 80%;
+	}
+
+	.reserveCont .resErve.grP1{
+		font-size: 0.7em;
+	}
+
+
+}
+
+@media only screen and (min-width: 1280px){
+	.reserveCont{
+	    top: 45%;
+	}
+	.aboutUsContent{
+		font-size: 0.9em;
+	}
+
+	.aboutLastContent{
+		margin-top: 20px;
+		line-height: 20px;
+	}
+
+}
